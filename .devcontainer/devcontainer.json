@@ -102,7 +102,8 @@
                 "stkb.rewrap", // "Alt + Q" -> rewrap comments after n characters on one line
                 "streetsidesoftware.code-spell-checker", // Spell checks your code
                 "tyriar.sort-lines", // "Ctrl + Shift + P -> Sort lines" -> sort lines alphabetically
-                "waderyan.gitblame" // Enhances git blame experience
+                "waderyan.gitblame", // Enhances git blame experience
+                "peterj.proto" // Protobuf support
             ]
         }
     }
