@@ -1959,8 +1959,7 @@ type StreamingQueryCommand_ExplainCommand struct {
 	unknownFields protoimpl.UnknownFields
 
 	// TODO: Consider reusing Explain from AnalyzePlanRequest message.
-	//
-	//	We can not do this right now since it base.proto imports this file.
+	//       We can not do this right now since it base.proto imports this file.
 	Extended bool `protobuf:"varint,1,opt,name=extended,proto3" json:"extended,omitempty"`
 }
 

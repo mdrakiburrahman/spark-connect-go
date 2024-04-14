@@ -2648,15 +2648,14 @@ type StatSummary struct {
 	// (Optional) Statistics from to be computed.
 	//
 	// Available statistics are:
-	//
-	//	count
-	//	mean
-	//	stddev
-	//	min
-	//	max
-	//	arbitrary approximate percentiles specified as a percentage (e.g. 75%)
-	//	count_distinct
-	//	approx_count_distinct
+	//  count
+	//  mean
+	//  stddev
+	//  min
+	//  max
+	//  arbitrary approximate percentiles specified as a percentage (e.g. 75%)
+	//  count_distinct
+	//  approx_count_distinct
 	//
 	// If no statistics are given, this function computes 'count', 'mean', 'stddev', 'min',
 	// 'approximate quartiles' (percentiles at 25%, 50%, and 75%), and 'max'.
@@ -3228,13 +3227,12 @@ func (x *StatSampleBy) GetSeed() int64 {
 // Replaces null values.
 // It will invoke 'Dataset.na.fill' (same as 'DataFrameNaFunctions.fill') to compute the results.
 // Following 3 parameter combinations are supported:
-//
-//	1, 'values' only contains 1 item, 'cols' is empty:
-//	  replaces null values in all type-compatible columns.
-//	2, 'values' only contains 1 item, 'cols' is not empty:
-//	  replaces null values in specified columns.
-//	3, 'values' contains more than 1 items, then 'cols' is required to have the same length:
-//	  replaces each specified column with corresponding value.
+//  1, 'values' only contains 1 item, 'cols' is empty:
+//    replaces null values in all type-compatible columns.
+//  2, 'values' only contains 1 item, 'cols' is not empty:
+//    replaces null values in specified columns.
+//  3, 'values' contains more than 1 items, then 'cols' is required to have the same length:
+//    replaces each specified column with corresponding value.
 type NAFill struct {
 	state         protoimpl.MessageState
 	sizeCache     protoimpl.SizeCache
