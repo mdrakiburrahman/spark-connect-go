@@ -20,7 +20,7 @@ if pgrep -f "org.apache.spark.sql.connect.service.SparkConnectServer" >/dev/null
     echo "Spark Connect is already running"
 else
     echo "Spark Connect is not running. Starting..."
-    sudo nohup /opt/spark/sbin/start-connect-server.sh --packages org.apache.spark:spark-connect_2.12:3.4.0 &
+    sudo /opt/spark/sbin/start-connect-server.sh --packages org.apache.spark:spark-connect_2.12:3.4.0
 fi
 
 echo
