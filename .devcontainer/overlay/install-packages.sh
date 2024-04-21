@@ -14,17 +14,6 @@ apt-get install -y \
     wget \
     openjdk-8-jdk
 
-# Spark Connect compatible version
-#
-SPARK_VERSION='3.4.2'
-echo "Installing Apache Spark '$SPARK_VERSION' (for local 'spark-submit')"
-wget https://archive.apache.org/dist/spark/spark-$SPARK_VERSION/spark-$SPARK_VERSION-bin-hadoop3.tgz &&
-    tar -xvf spark-$SPARK_VERSION-bin-hadoop3.tgz &&
-    mkdir -p /opt/spark &&
-    mv spark-$SPARK_VERSION-bin-hadoop3/* /opt/spark &&
-    rm -rf spark-$SPARK_VERSION-bin-hadoop3.tgz &&
-    rm -rf spark-$SPARK_VERSION-bin-hadoop3
-
 # Install buf CLI
 #
 echo "Installing buf CLI"
